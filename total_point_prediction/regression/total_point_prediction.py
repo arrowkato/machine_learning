@@ -25,10 +25,12 @@ import numpy as np
 from matplotlib import pyplot as plt
 %matplotlib inline
 
+# path example
+csv_path = '~/machine_learning/data/retired_players_at_least_decade.csv'
 
 
 # 18歳から32歳までの得点を学習して生涯得点数を予測する
-dat = pd.read_csv('C:/anaconda3/envs/pytlesson/data/legend_retired_players.csv', skiprows=None, encoding='utf-8')
+dat = pd.read_csv(csv_path, skiprows=None, encoding='utf-8')
 
 # ndarray形式への変換を忘れずにしておく
 trainPoint = dat.loc[:, ['18th','19th','20th','21th','22th','23th','24th','25th','26th','27th','28th','29th','30th','31th','32th']].values
