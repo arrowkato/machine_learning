@@ -1,4 +1,4 @@
-# machine_learning
+# total_point_prediction
 
 NBA選手のキャリア途中までのデータから、生涯得点を予想する
 
